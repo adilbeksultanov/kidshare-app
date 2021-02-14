@@ -1,3 +1,4 @@
+
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Link, Route } from "react-router-dom";
@@ -27,6 +28,7 @@ function App() {
         <footer className="row center">All rights reserved</footer>
       </div>
     </BrowserRouter>
+
   );
 }
 

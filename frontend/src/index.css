@@ -1,146 +1,92 @@
-html {
-  font-size: 52.5; /* 16px x 62.5 = 10px = 1 rem */
-  box-sizing: border-box;
-}
-body {
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Indie+Flower&display=swap');
+
+
+
+body{
   margin: 0;
-  height: 100vh;
-  font-size: 1.4rem;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Indie Flower', cursive,'Comfortaa', cursive, sans-serif;
+  font-size: 18px;
 }
 
-#root {
-  height: 100%;
+input{
+  display: inline-block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: rgb(2, 168, 21) solid 1px;
 }
 
-/* Layout */
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
-  height: 100%;
+
+/* Main Header at registration */
+
+
+.header-footer-at-registration{
+  background: rgb(2, 168, 21);
+  margin-top:0;
+  padding: 20px;
 }
 
-header {
-  grid-area: header;
-  background-color: #201050;
-}
-main {
-  grid-area: main;
-  padding: 1rem;
-}
-footer {
-  grid-area: footer;
-  background-color: #201050;
-  color: #ffffff;
+/* Main Registration page */
+
+.registration-info-title{
+
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
-/* Common */
-h1 {
-  font-size: 1.8rem;
-  padding: 1rem 0;
-}
-h2 {
-  font-size: 1.6rem;
-  padding: 1rem 0;
-}
-a {
-  text-decoration: none;
+#header-title, .registration-info-title,.footer-text{
+  text-align: center;
 }
 
-a:hover {
-  color: #ff8000;
-}
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-li {
-  margin-top: 1rem;
-}
-button {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 0.1rem #a4a4a4;
-  font-size: 1.6rem;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f8f8;
-  cursor: pointer;
-}
-button:hover {
-  border: 0.1rem #203040 solid;
-}
-button.primary {
-  background-color: #f0c040;
-}
-button.block {
-  width: 100%;
+#registration-submit-btn{
+  display: block;
+  margin: 2em auto;
 }
 
-/* Header */
-header a {
-  color: #ffffff;
-  padding: 1rem;
-}
-a.brand {
-  color: #ffffff;
-  padding: 3rem;
-  font-weight: bold;
-}
-.row {
+.registrationBody{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.row.center {
-  justify-content: center;
-}
-.row.top {
-  align-items: flex-start;
-}
-.col-1 {
-  flex: 1 1 15rem;
-}
-.col-2 {
-  flex: 2 1 30rem;
 }
 
-/* Image */
-img {
-  border-radius: 0.5rem;
+img{
+  width: 100%;
+  height: auto;
+  margin-top: 2.5em;
 }
-img.medium {
-  max-width: 29rem;
+
+
+
+.column-1{
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.column-2{
+  margin-top: 1em;
+  margin-left: 5em;
+  margin-right: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  align-content: space-between;
+  /* border: 1px solid black; */
+}
+
+
+.registrationBody{
+  margin: 0 auto;
+  max-width: 90%;
+  /* border: 1px solid green; */
+}
+
+.info-container{
+  /* border: 1px solid green; */
   width: 100%;
 }
-img.small {
-  max-width: 10rem;
-  width: 100;
-}
-img.large {
-  width: 100%;
-}
 
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+p,input{
+  font-size: 1.5rem;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
