@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs";
 const data = {
   users: [
     {
-      firstName: "Tal",
+      firstName: "Talgat",
       lastName: "Tul",
       email: "tal@ualberta.ca",
       image: "/images/p1.jpg",
@@ -23,7 +23,7 @@ const data = {
       childFirstName: "Diana",
       childLastName: "Tul",
       childGender: "female",
-      childAge: "5",
+      childAge: 5,
       childAllergies: "none",
       childDietaryRestrictions: "none",
       childAdditionalInformation: "like to play soccer",
@@ -49,7 +49,7 @@ const data = {
       childFirstName: "Diana",
       childLastName: "Tul",
       childGender: "female",
-      childAge: "7",
+      childAge: 7,
       childAllergies: "sun",
       childDietaryRestrictions: "peenuts",
       childAdditionalInformation: "likes to sing and swim",

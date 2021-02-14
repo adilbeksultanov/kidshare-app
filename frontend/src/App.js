@@ -1,4 +1,3 @@
-
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Link, Route } from "react-router-dom";
@@ -10,7 +9,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="grid-containter">
-        <header className="row">
+        <header className="header-footer-at-registration">
+          <h1 id="header-title">KidShare Registration</h1>
           <div>
             <Link to="/">KIDSHARE</Link>
           </div>
@@ -19,16 +19,19 @@ function App() {
             <Link to="/family-search">Search Family</Link>
           </div>
         </header>
+
         <main>
           <Route path="/" component={HomeScreen} exact></Route>
           <Route path="/user/:id" component={ProfileScreen}></Route>
           <Route path="/register" component={RegisterScreen}></Route>
           <Route path="/register" component={SigninScreen}></Route>
         </main>
-        <footer className="row center">All rights reserved</footer>
+        <footer className="header-footer-at-registration">
+          <h4 className="footer-text">KidShare Corp.</h4>
+          <p className="footer-text">All rights reserved</p>
+        </footer>
       </div>
     </BrowserRouter>
-
   );
 }
 

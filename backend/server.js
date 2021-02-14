@@ -1,8 +1,9 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import userRouter from "./routers/userRouters";
-//import userRouter from "./routers/userRouters";
+import userRouter from "./routers/userRouters.js";
+import expressAsyncHandler from "express-async-handler";
+//import User from "./models/userModel";
 
 dotenv.config();
 
