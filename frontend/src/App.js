@@ -5,6 +5,7 @@ import HomeScreen from "./screens/HomeScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import SigninScreen from "./screens/SigninScreen";
+import SearchScreen from "./screens/SearchScreen";
 function App() {
   return (
     <BrowserRouter>
@@ -22,9 +23,10 @@ function App() {
 
         <main>
           <Route path="/" component={HomeScreen} exact></Route>
+          <Route path="/search" component={SearchScreen} exact></Route>
           <Route path="/user/:id" component={ProfileScreen}></Route>
           <Route path="/register" component={RegisterScreen}></Route>
-          <Route path="/register" component={SigninScreen}></Route>
+          <Route path="/signin" component={SigninScreen}></Route>
         </main>
         <footer className="header-footer-at-registration">
           <h4 className="footer-text">KidShare Corp.</h4>

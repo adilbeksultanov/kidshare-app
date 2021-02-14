@@ -6,17 +6,17 @@
 
 
 body{
-  margin: 0;
   font-family: 'Indie Flower', cursive,'Comfortaa', cursive, sans-serif;
   font-size: 18px;
+  margin: 0;
 }
 
 input{
-  display: inline-block;
-  border-top: none;
+  border-bottom: rgb(2, 168, 21) solid 1px;
   border-left: none;
   border-right: none;
-  border-bottom: rgb(2, 168, 21) solid 1px;
+  border-top: none;
+  display: inline-block;
 }
 
 
@@ -32,9 +32,9 @@ input{
 /* Main Registration page */
 
 .registration-info-title{
+  margin-bottom: 0.5em;
 
   margin-top: 1em;
-  margin-bottom: 0.5em;
 }
 
 #header-title, .registration-info-title,.footer-text{
@@ -51,9 +51,9 @@ input{
 }
 
 img{
-  width: 100%;
   height: auto;
   margin-top: 2.5em;
+  width: 100%;
 }
 
 
@@ -64,14 +64,14 @@ img{
 }
 
 .column-2{
-  margin-top: 1em;
-  margin-left: 5em;
-  margin-right: 0;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
   /* flex-wrap: wrap; */
   align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5em;
+  margin-right: 0;
+  margin-top: 1em;
+  width: 50%;
   /* border: 1px solid black; */
 }
 
@@ -89,4 +89,30 @@ img{
 
 p,input{
   font-size: 1.5rem;
+}
+
+.container_signin_box {
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /*height: 30%; */
+  justify-content: center
+}
+
+.user_container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  /*height: 30%; */
+  justify-content: center;
+}
+
+.user_box {
+  flex: 1;
+}
+
+.user_box_img {
+  flex: 2;
+  flex-basis: 20%;
 }
